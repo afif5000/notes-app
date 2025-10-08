@@ -44,7 +44,7 @@ function App() {
     }
   };
 
-  const handleupdateNote = async (id, newTitle, newContent) => {
+  const handleupdateNote = async (id, updateTitle, updateContent) => {
     try {
       const res = await fetch(`${baseUrl}/notes/${id}`, {
         method: "PUT",
